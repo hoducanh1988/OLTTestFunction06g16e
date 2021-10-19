@@ -1,0 +1,234 @@
+﻿<UserControl x:Class="TestFunctionOlt60g16e.Views.TestAllUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestFunctionOlt60g16e.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" Background="White">
+
+    <TabControl Margin="5,5,5,5" TabStripPlacement="Bottom" BorderBrush="{StaticResource ColorBorder}" BorderThickness="0,0,0,1">
+        <TabControl.Resources>
+            <Style TargetType="{x:Type TabPanel}">
+                <Setter Property="HorizontalAlignment" Value="Right" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="label_header">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Width" Value="100"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="TextBox">
+                <Setter Property="Height" Value="35"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                <Setter Property="Padding" Value="10,0,0,0"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ColorBorder}"/>
+                <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="FontWeight" Value="SemiBold"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="CharacterCasing" Value="Upper"/>
+                <Style.Triggers>
+                    <Trigger Property="IsFocused"  Value="True">
+                        <Setter Property="Background" Value="{StaticResource ColorFocused}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="Label" x:Key="label_title">
+                <Setter Property="Width" Value="380"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ColorBorder}"/>
+                <Setter Property="BorderThickness" Value="0.5,0,0,0.5"/>
+                <Setter Property="Padding" Value="5,0,0,0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="label_content">
+                <Setter Property="Width" Value="120"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Padding" Value="10,0,0,0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ColorBorder}"/>
+                <Setter Property="BorderThickness" Value="0.5,0,0.5,0.5"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}" Value="Passed">
+                        <Setter Property="Foreground" Value="Lime"/>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}" Value="Failed">
+                        <Setter Property="Foreground" Value="Red"/>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}" Value="Waiting...">
+                        <Setter Property="Foreground" Value="Orange"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+        </TabControl.Resources>
+
+        <TabItem>
+            <TabItem.Header>
+                <Label Style="{StaticResource label_header}" Content="Log Item"/>
+            </TabItem.Header>
+
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="WrapPanel">
+                        <Setter Property="Background" Value="White"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsEnabled}" Value="False">
+                                <Setter Property="Background" Value="{StaticResource ColorDisable}"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Resources>
+
+                <Label FontSize="15" Content="Nhập ID sản phẩm :"/>
+                <TextBox TextChanged="TextBox_TextChanged" Margin="0,0,0,10" IsEnabled="{Binding Path=Testing.enableTextBox, UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="False" Text="{Binding Path=Testing.macAddress, UpdateSourceTrigger=PropertyChanged}">
+                    <TextBox.InputBindings>
+                        <KeyBinding Key="Enter" Command="{Binding StartCommand}" />
+                    </TextBox.InputBindings>
+                </TextBox>
+
+                <WrapPanel IsEnabled="{Binding Path=Setting.isUpgradeFirmware, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" BorderThickness="0.5,0.5,0,0.5" Content="Nâng cấp firmware" />
+                    <Label Style="{StaticResource label_content}" BorderThickness="0.5,0.5,0.5,0.5" Content="{Binding Path=Testing.upgradeResult, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isConfigGE, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Cấu hình uplink mode GE" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.configGEResult, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isRestoreGE, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Restore file cấu hình uplink mode GE" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.restoreGEResult, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isTestTrafficPon1234Uplink1234, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Test traffic port pon 1-2-3-4 &amp; port uplink 1-2-3-4" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.pon1234uplink1234Result, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isTestTrafficPon5678Uplink1234, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Test traffic port pon 5-6-7-8 &amp; port uplink 1-2-3-4" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.pon5678uplink1234Result, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isTestTrafficPon9101112Uplink5678, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Test traffic port pon 9-10-11-12 &amp; port uplink 5-6-7-8" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.pon9101112uplink5678Result, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isTestTrafficPon13141516Uplink5678, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Test traffic port pon 13-14-15-16 &amp; port uplink 5-6-7-8" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.pon13141516uplink5678Result, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isConfigXGE, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Cấu hình uplink mode XGE" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.configXGEResult, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isRestoreXGE, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Restore file cấu hình uplink mode XGE" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.restoreXGEResult, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isTestTrafficXGE, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Test traffic XGE" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.trafficResult, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+                <WrapPanel IsEnabled="{Binding Path=Setting.isFactoryReset, UpdateSourceTrigger=PropertyChanged}">
+                    <Label Style="{StaticResource label_title}" Content="Factory reset" />
+                    <Label Style="{StaticResource label_content}" Content="{Binding Path=Testing.factoryResetResult, UpdateSourceTrigger=PropertyChanged}"/>
+                </WrapPanel>
+
+                <Grid>
+                    <StackPanel HorizontalAlignment="Left">
+                        <Label FontSize="15" Content="Result"/>
+                        <Label FontSize="45" Margin="0,-15,0,0" FontWeight="SemiBold" Content="{Binding Path=Testing.totalResult, UpdateSourceTrigger=PropertyChanged}">
+                            <Label.Style>
+                                <Style TargetType="Label">
+                                    <Setter Property="Foreground" Value="Black"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}" Value="Passed">
+                                            <Setter Property="Foreground" Value="Lime"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}" Value="Failed">
+                                            <Setter Property="Foreground" Value="Red"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}" Value="Waiting...">
+                                            <Setter Property="Foreground" Value="Orange"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Label.Style>
+                        </Label>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right">
+                        <WrapPanel HorizontalAlignment="Right" Margin="0,0,0,0">
+                            <Label FontSize="15" Content="ID:"/>
+                            <Label FontSize="15" FontWeight="SemiBold" Content="{Binding Path=Testing.ID, UpdateSourceTrigger=PropertyChanged}"/>
+                        </WrapPanel>
+                        <WrapPanel HorizontalAlignment="Right" Margin="0,-7,0,0">
+                            <Label FontSize="15" Content="Total time:"/>
+                            <Label FontSize="15" FontWeight="SemiBold" Content="{Binding Path=Testing.totalTime, UpdateSourceTrigger=PropertyChanged}"/>
+                        </WrapPanel>
+                        <WrapPanel Margin="0,-7,0,0">
+                            <Label FontSize="15" Content="Pass:"/>
+                            <Label FontSize="15" FontWeight="SemiBold" Content="{Binding Path=Testing.passCount, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label FontSize="15" Content="- Fail:"/>
+                            <Label FontSize="15" FontWeight="SemiBold" Content="{Binding Path=Testing.failCount, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label FontSize="15" Content="- Total:"/>
+                            <Label FontSize="15" FontWeight="SemiBold" Content="{Binding Path=Testing.totalCount, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label FontSize="15" Content="=>"/>
+                            <Label FontSize="15" Content="Error rate:"/>
+                            <Label FontSize="15" Foreground="Red" FontWeight="SemiBold" Content="{Binding Path=Testing.errorRate, UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label FontSize="15" Margin="-5,0,0,0" Foreground="Red" FontWeight="SemiBold" Content="%"/>
+                        </WrapPanel>
+
+                    </StackPanel>
+                </Grid>
+
+
+            </StackPanel>
+
+        </TabItem>
+
+        <TabItem>
+            <TabItem.Header>
+                <Label Style="{StaticResource label_header}" Content="Log System"/>
+            </TabItem.Header>
+
+            <ScrollViewer x:Name="scrl_logsystem">
+                <RichTextBox  Background="#FFFFFF" BorderThickness="0" IsReadOnly="True" Block.LineHeight="1" Padding="0,5,0,0">
+                    <FlowDocument PageHeight="180">
+                        <Paragraph>
+                            <Run Foreground="Black" FontWeight="Normal" Text="{Binding Path=Testing.logSystem, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </ScrollViewer>
+        </TabItem>
+
+        <TabItem>
+            <TabItem.Header>
+                <Label Style="{StaticResource label_header}" Content="Log Telnet"/>
+            </TabItem.Header>
+
+            <ScrollViewer x:Name="scrl_logtelnet">
+                <RichTextBox  Background="#FFFFFF" BorderThickness="0" IsReadOnly="True" Block.LineHeight="1" Padding="0,5,0,0">
+                    <FlowDocument PageHeight="180">
+                        <Paragraph>
+                            <Run Foreground="Black" FontWeight="Normal" Text="{Binding Path=Testing.logTelnet, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </ScrollViewer>
+        </TabItem>
+
+    </TabControl>
+
+</UserControl>

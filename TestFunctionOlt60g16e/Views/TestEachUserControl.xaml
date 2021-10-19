@@ -1,0 +1,85 @@
+﻿<UserControl x:Class="TestFunctionOlt60g16e.Views.TestEachUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestFunctionOlt60g16e.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+
+    <UserControl.Resources>
+
+        <Style TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ColorBorder}"/>
+            <Setter Property="BorderThickness" Value="1,1,1,1"/>
+            <Setter Property="Margin" Value="5,20,20,20"/>
+            <EventSetter Event="MouseDown" Handler="Border_MouseDown"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource ColorMouseOver}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="5,5,5,5"/>
+        </Style>
+
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0">
+            <TextBlock Text="Nâng cấp firmware"/>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="0">
+            <TextBlock Text="Cấu hình uplink mode GE"/>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="0">
+            <TextBlock Text="Restore file cấu hình uplink mode GE"/>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="1">
+            <TextBlock Text="Test traffic port pon 1-2-3-4 &amp; port uplink 1-2-3-4"/>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="Test traffic port pon 5-6-7-8 &amp; port uplink 1-2-3-4"/>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="1">
+            <TextBlock Text="Test traffic port pon 9-10-11-12 &amp; port uplink 5-6-7-8"/>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="2">
+            <TextBlock Text="Test traffic port pon 13-14-15-16 &amp; port uplink 5-6-7-8"/>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="2">
+            <TextBlock Text="Cấu hình uplink mode XGE"/>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="2">
+            <TextBlock Text="Restore file cấu hình uplink mode XGE"/>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="3">
+            <TextBlock Text="Test traffic"/>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="3">
+            <TextBlock Text="Factory reset"/>
+        </Border>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,88 @@
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\TestFunctionOlt60g16e.exe.config
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\TestFunctionOlt60g16e.exe
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\TestFunctionOlt60g16e.pdb
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\MainWindow.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\App.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e_MarkupCompile.cache
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e_MarkupCompile.lref
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\MainWindow.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.g.resources
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.Properties.Resources.resources
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csproj.GenerateResource.cache
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csproj.CoreCompileInputs.cache
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.exe
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.pdb
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\App.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestAllUserControl.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestAllUserControl.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestEachUserControl.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestEachUserControl.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\SettingUserControl.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\SettingUserControl.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\QueryLogUserControl.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\QueryLogUserControl.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\UserGuideUserControl.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\UserGuideUserControl.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DesignDocumentUserControl.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DesignDocumentUserControl.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\AboutUserControl.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\AboutUserControl.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\NAudio.dll
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\UtilityPack.dll
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\NAudio.xml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csproj.CopyComplete
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon1234Uplink1234.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon1234Uplink1234.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon5678Uplink1234.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon5678Uplink1234.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon9101112Uplink5678.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon9101112Uplink5678.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon13141516Uplink5678.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon13141516Uplink5678.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficXGE.g.cs
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficXGE.baml
+C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csprojAssemblyReference.cache
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\TestFunctionOlt60g16e.exe.config
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\TestFunctionOlt60g16e.exe
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\TestFunctionOlt60g16e.pdb
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\NAudio.dll
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\UtilityPack.dll
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\NAudio.xml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\MainWindow.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\AboutUserControl.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DesignDocumentUserControl.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon1234Uplink1234.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon13141516Uplink5678.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon5678Uplink1234.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon9101112Uplink5678.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficXGE.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\QueryLogUserControl.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\SettingUserControl.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestAllUserControl.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestEachUserControl.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\UserGuideUserControl.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\App.g.cs
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e_MarkupCompile.cache
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e_MarkupCompile.lref
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\App.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\MainWindow.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\AboutUserControl.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DesignDocumentUserControl.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon1234Uplink1234.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon13141516Uplink5678.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon5678Uplink1234.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficPon9101112Uplink5678.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\DialogTestTrafficXGE.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\QueryLogUserControl.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\SettingUserControl.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestAllUserControl.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\TestEachUserControl.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\Views\UserGuideUserControl.baml
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.g.resources
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.Properties.Resources.resources
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csproj.GenerateResource.cache
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csproj.CoreCompileInputs.cache
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csproj.CopyComplete
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.exe
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.pdb
+G:\Backup_Tool_Test\repos\09. OLT\TestFunctionOlt60g16e\TestFunctionOlt60g16e\obj\Debug\TestFunctionOlt60g16e.csprojAssemblyReference.cache

@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C79D2BE-B63B-43B0-8A57-32B6A89CDFC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TestFunctionOlt60g16e</RootNamespace>
+    <AssemblyName>TestFunctionOlt60g16e</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Asset\Icon\OLT.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NAudio, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.9.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="reachframework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UtilityPack, Version=1.0.9.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UtilityPack.1.0.9.3\lib\net45\UtilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commands\LogGoCommand.cs" />
+    <Compile Include="Commands\SettingOpenConfigGEFileCommand.cs" />
+    <Compile Include="Commands\SettingOpenConfigXGEFileCommand.cs" />
+    <Compile Include="Commands\SettingOpenFirmwareFileCommand.cs" />
+    <Compile Include="Commands\SettingOpenScriptFileTestGECommand.cs" />
+    <Compile Include="Commands\SettingOpenScriptFileTestXGECommand.cs" />
+    <Compile Include="Commands\SettingOpenTeleATTFileCommand.cs" />
+    <Compile Include="Commands\SettingSaveCommand.cs" />
+    <Compile Include="Commands\TestingStartCommand.cs" />
+    <Compile Include="Functions\Excute.cs" />
+    <Compile Include="Functions\myGlobal.cs" />
+    <Compile Include="Functions\OLT.cs" />
+    <Compile Include="Functions\Utility.cs" />
+    <Compile Include="Functions\WindowHandleHelper.cs" />
+    <Compile Include="Functions\WindowHandleInfo.cs" />
+    <Compile Include="Models\AboutModel.cs" />
+    <Compile Include="Models\DesignDocumentModel.cs" />
+    <Compile Include="Models\EachModel.cs" />
+    <Compile Include="Models\LogModel.cs" />
+    <Compile Include="Models\MainWindowModel.cs" />
+    <Compile Include="Models\SettingModel.cs" />
+    <Compile Include="Models\TestingModel.cs" />
+    <Compile Include="Models\UserGuideModel.cs" />
+    <Compile Include="Protocol\OLTIProtocol.cs" />
+    <Compile Include="Protocol\Telnet.cs" />
+    <Compile Include="Protocol\Uart.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\DesignDocumentViewModel.cs" />
+    <Compile Include="ViewModels\LogViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\SettingViewModel.cs" />
+    <Compile Include="ViewModels\TestingViewModel.cs" />
+    <Compile Include="ViewModels\UserGuideViewModel.cs" />
+    <Compile Include="Views\AboutUserControl.xaml.cs">
+      <DependentUpon>AboutUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DesignDocumentUserControl.xaml.cs">
+      <DependentUpon>DesignDocumentUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DialogTestTrafficPon1234Uplink1234.xaml.cs">
+      <DependentUpon>DialogTestTrafficPon1234Uplink1234.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DialogTestTrafficPon13141516Uplink5678.xaml.cs">
+      <DependentUpon>DialogTestTrafficPon13141516Uplink5678.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DialogTestTrafficPon5678Uplink1234.xaml.cs">
+      <DependentUpon>DialogTestTrafficPon5678Uplink1234.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DialogTestTrafficPon9101112Uplink5678.xaml.cs">
+      <DependentUpon>DialogTestTrafficPon9101112Uplink5678.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DialogTestTrafficXGE.xaml.cs">
+      <DependentUpon>DialogTestTrafficXGE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QueryLogUserControl.xaml.cs">
+      <DependentUpon>QueryLogUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingUserControl.xaml.cs">
+      <DependentUpon>SettingUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestAllUserControl.xaml.cs">
+      <DependentUpon>TestAllUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestEachUserControl.xaml.cs">
+      <DependentUpon>TestEachUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserGuideUserControl.xaml.cs">
+      <DependentUpon>UserGuideUserControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\AboutUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DesignDocumentUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DialogTestTrafficPon1234Uplink1234.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DialogTestTrafficPon13141516Uplink5678.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DialogTestTrafficPon5678Uplink1234.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DialogTestTrafficPon9101112Uplink5678.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DialogTestTrafficXGE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QueryLogUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SettingUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TestAllUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TestEachUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserGuideUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\Image\pc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\Icon\OLT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\Image\about.png" />
+    <Resource Include="Asset\Image\help.png" />
+    <Resource Include="Asset\Image\log.png" />
+    <Resource Include="Asset\Image\run.png" />
+    <Resource Include="Asset\Image\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\Image\design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asset\Image\run2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

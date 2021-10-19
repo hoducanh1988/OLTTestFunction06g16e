@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <CommomPara>
+    <Enable>true</Enable>
+  </CommomPara>
+  <DialogList>
+    <!--ID:1普通弹框，0弹框读秒自消失-->
+    <Command Priority="0" DialogID="1" PeriodTime="2" DialogType="OK:CANCEL" Message="请【擦拭光纤】并【确认合格】后点击【OK】按钮!" ShowTime="1000"></Command>
+    <Command Priority="1" DialogID="1" PeriodTime="3" DialogType="OK" Message="请【更换光纤】并【确认合格】后点击【OK】按钮!"  ShowTime="5000"></Command>
+  </DialogList>
+</root>

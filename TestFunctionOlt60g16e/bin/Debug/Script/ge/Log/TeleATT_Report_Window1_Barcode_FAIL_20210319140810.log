@@ -1,0 +1,125 @@
+The path of log:C:\Users\QuanLM\Desktop\ge\log\TeleATT_Report_Window1_Barcode_FAIL_20210319140810.log
+
+Test Count:1
+Total Result:Fail
+
+===========================================================================================
+* Program     : TeleATT
+* Version     : 2.7.7.720914
+* Description : 2018/06/14 12:00:01
+
+-------------------------------------------------------------------------------------------
+Test Name:Eachother Test
+Start Time:2021-03-19 02:07:56
+Stop Time:2021-03-19 02:08:10
+Testing Time:00:00:14
+
+Port Map:
+ 3(1,2,1)<---->4(1,2,2)
+ 5(1,2,3)<---->6(1,2,4)
+ 7(1,2,5)<---->8(1,2,6)
+ 9(1,2,7)<---->10(1,2,8)
+
+TestSetting Information:
+
+   TestPort    FrameType     TxMode    TransmitTime    Packets     RateMode      Speed         Duplex     FlowControl 
+------------+------------+------------+------------+------------+------------+------------+------------+------------
+ 3(1,2,1)    Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+ 4(1,2,2)    Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+ 5(1,2,3)    Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+ 6(1,2,4)    Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+ 7(1,2,5)    Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+ 8(1,2,6)    Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+ 9(1,2,7)    Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+ 10(1,2,8)   Fixed:64     Continuous   10           14880952     IFG          Speed_1000M  Full         False      
+------------+------------+------------+------------+------------+------------+------------+------------+------------
+WaitTime:
+ The waittime After test   : 200ms
+ The SynchronousTime       : 200ms
+
+MDI-II/X enabled            : False
+LED checked enabled         : False
+Address Learning Information:
+ Address learning enabled   : True
+ Address learning checked   : True
+ Address learning timeout   : 5s
+ Once Address learning time : 500ms
+ Once Address learning rate : 1M
+ Address learning delay     : 100ms
+
+PreTest Information:
+ Pretest enabled            : False
+ Pretest time               : 3s
+-------------------------------------------------------------------------------------------
+Detail infomation:
+ 19/03/2021 14:07:56   Eachother Test Start
+ 19/03/2021 14:07:56   Set Phy successfully
+ 19/03/2021 14:07:56   Set schedule mode successfully
+ 19/03/2021 14:07:56   Add stream successfully
+ 19/03/2021 14:07:56   Add stream counter successfully
+ 19/03/2021 14:07:56   Port configuration completed
+ 19/03/2021 14:07:57   Address learning completed
+ 19/03/2021 14:07:57   Clear counter completed
+ 19/03/2021 14:07:57   Start transmit
+ 19/03/2021 14:08:10   Stop transmit
+ 19/03/2021 14:08:10   Stop statistics
+ 19/03/2021 14:08:10   Read stream statistics completed
+
+Error Information:
+Port3(1,2,1):Packets are lost.
+Port4(1,2,2):Packets are lost.
+Port5(1,2,3):Packets are lost.
+Port6(1,2,4):Packets are lost.
+Port7(1,2,5):Packets are lost.
+Port8(1,2,6):Packets are lost.
+Port9(1,2,7):Packets are lost.
+Port10(1,2,8):Packets are lost.
+
+
+The result of Testsetting:Fail
+
+The information of Port Statistics:
+
+   PortID        Speed        Duplex     FrameSize      Rate          TX           RX        FCSError     LostRate   
+------------+------------+------------+------------+------------+------------+------------+------------+------------+---------
+ 3(1,2,1)    Speed_1000M  Full         64           100          14880952     0            0            100%        
+ 4(1,2,2)    Speed_1000M  Full         64           100          14880952     0            0            100%        
+ 5(1,2,3)    Speed_1000M  Full         64           100          14880952     0            0            100%        
+ 6(1,2,4)    Speed_1000M  Full         64           100          14880952     0            0            100%        
+ 7(1,2,5)    Speed_1000M  Full         64           100          14880952     0            0            100%        
+ 8(1,2,6)    Speed_1000M  Full         64           100          14880952     0            0            100%        
+ 9(1,2,7)    Speed_1000M  Full         64           100          14880952     0            0            100%        
+ 10(1,2,8)   Speed_1000M  Full         64           100          14880952     0            0            100%        
+------------+------------+------------+------------+------------+------------+------------+------------+---------+---------
+
+The information of Stream Statistics:
+
+      StreamName          StreamRate      TX           RX       LostPacket    SeqError    PayloadError   Delay(ns)  
+------------------------+------------+------------+------------+------------+------------+-------------+------------
+ 3(1,2,1)-4(1,2,2)        100          14880952     0            -14880952    0            0             --         
+ 4(1,2,2)-3(1,2,1)        100          14880952     0            -14880952    0            0             --         
+ 5(1,2,3)-6(1,2,4)        100          14880952     0            -14880952    0            0             --         
+ 6(1,2,4)-5(1,2,3)        100          14880952     0            -14880952    0            0             --         
+ 7(1,2,5)-8(1,2,6)        100          14880952     0            -14880952    0            0             --         
+ 8(1,2,6)-7(1,2,5)        100          14880952     0            -14880952    0            0             --         
+ 9(1,2,7)-10(1,2,8)       100          14880952     0            -14880952    0            0             --         
+ 10(1,2,8)-9(1,2,7)       100          14880952     0            -14880952    0            0             --         
+------------------------+------------+------------+------------+------------+------------+-------------+------------
+
+===========================================================================================
+
+The summary of Error Information:
+
+   PortSeq     ErrorInfo  
+------------+-----------------------------------------------------------------------------
+ 3(1,2,1)    Packets are lost
+ 4(1,2,2)    Packets are lost
+ 5(1,2,3)    Packets are lost
+ 6(1,2,4)    Packets are lost
+ 7(1,2,5)    Packets are lost
+ 8(1,2,6)    Packets are lost
+ 9(1,2,7)    Packets are lost
+ 10(1,2,8)   Packets are lost
+------------+-----------------------------------------------------------------------------
+===========================================================================================
+

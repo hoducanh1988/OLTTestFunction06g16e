@@ -1,0 +1,62 @@
+Setting Information
+*********************************************************************
+isConfigXGE=True
+isRestoreXGE=True
+isTestTrafficXGE=True
+isFactoryReset=True
+isTestTrafficPon5678Uplink1234=True
+isTestTrafficPon9101112Uplink5678=True
+isTestTrafficPon13141516Uplink5678=True
+isTestTrafficPon1234Uplink1234=True
+isUpgradeFirmware=True
+isConfigGE=True
+isRestoreGE=True
+delayOpenTeleATT=3
+timeoutOltReboot=90
+oltIP=192.168.100.2
+oltTelnetPort=23
+oltUser=admin
+oltPassword=admin
+firmwareFile=C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\firmware\G16E_R5.3.25_V333.tar.gz
+firmwareVersion=R5.3.25V333
+configGEFile=C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\ge\main.conf
+configXGEFile=C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\xe\main.conf
+teleATTFile=C:\Program Files (x86)\Xinertel\TeleATT2.7.7\TeleATT.exe
+scriptTestTrafficGE=C:\Users\chien\Desktop\test\TeleATTCfg
+scriptTestTrafficXGE=C:\Users\chien\Desktop\test\TeleATTCfg
+timeoutTestTraffic=90
+
+Log Item
+*********************************************************************
+ID:GOODLE MORNING...
+Total time:00:00:09
+Total result:Failed
+Pass:0 - Fail:4 - Total:4 => Error rate:100 %
+                                      Nâng cấp firmware:     Failed
+                                Cấu hình uplink mode GE:          -
+                   Restore file cấu hình uplink mode GE:          -
+    Test traffic port pon 1-2-3-4 & port uplink 1-2-3-4:          -
+    Test traffic port pon 5-6-7-8 & port uplink 1-2-3-4:          -
+ Test traffic port pon 9-10-11-12 & port uplink 5-6-7-8:          -
+Test traffic port pon 13-14-15-16 & port uplink 5-6-7-8:          -
+                               Cấu hình uplink mode XGE:          -
+                  Restore file cấu hình uplink mode XGE:          -
+                                       Test traffic XGE:          -
+                                          Factory reset:          -
+
+Log System
+*********************************************************************
+>Date time: 18/03/2021 09:51:06 3514
+>Nâng cấp firmware:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+...Login vào olt = [1-False] [2-False] [3-False] 
+...Kết quả nâng cấp firmware : False
+...
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+> Total result: Failed
+> Total time: 00:00:09 Sec
+
+Log Telnet
+*********************************************************************
+

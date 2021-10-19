@@ -1,0 +1,14 @@
+﻿<Application x:Class="TestFunctionOlt60g16e.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TestFunctionOlt60g16e"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush Color="#777777" x:Key="ColorBorder"/>
+            <SolidColorBrush Color="#ffb05c" x:Key="ColorMouseOver"/>
+            <SolidColorBrush Color="#fffccf" x:Key="ColorFocused"/>
+            <SolidColorBrush Color="#d4d4d4" x:Key="ColorDisable"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

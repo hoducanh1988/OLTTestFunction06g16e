@@ -1,0 +1,63 @@
+Setting Information
+*********************************************************************
+isConfigXGE=False
+isRestoreXGE=False
+isTestTrafficXGE=False
+isFactoryReset=False
+isTestTrafficPon5678Uplink1234=True
+isTestTrafficPon9101112Uplink5678=True
+isTestTrafficPon13141516Uplink5678=True
+isTestTrafficPon1234Uplink1234=True
+isUpgradeFirmware=False
+isConfigGE=False
+isRestoreGE=False
+delayOpenTeleATT=3
+timeoutOltReboot=90
+oltIP=192.168.100.2
+oltTelnetPort=23
+oltUser=admin
+oltPassword=admin
+firmwareFile=C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\firmware\G16E_R5.3.25_V333.tar.gz
+firmwareVersion=R5.3.25V333
+configGEFile=C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\ge\main.conf
+configXGEFile=C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\xe\main.conf
+teleATTFile=C:\Program Files (x86)\Xinertel\TeleATT2.7.7\TeleATT.exe
+scriptTestTrafficGE=C:\Users\chien\Desktop\test\TeleATTCfg
+scriptTestTrafficXGE=C:\Users\chien\Desktop\test\TeleATTCfg
+timeoutTestTraffic=90
+
+Log Item
+*********************************************************************
+ID:SDFDS
+Total time:00:00:20
+Total result:Failed
+Pass:0 - Fail:5 - Total:5 => Error rate:100 %
+                                      Nâng cấp firmware:          -
+                                Cấu hình uplink mode GE:          -
+                   Restore file cấu hình uplink mode GE:          -
+    Test traffic port pon 1-2-3-4 & port uplink 1-2-3-4:     Failed
+    Test traffic port pon 5-6-7-8 & port uplink 1-2-3-4:          -
+ Test traffic port pon 9-10-11-12 & port uplink 5-6-7-8:          -
+Test traffic port pon 13-14-15-16 & port uplink 5-6-7-8:          -
+                               Cấu hình uplink mode XGE:          -
+                  Restore file cấu hình uplink mode XGE:          -
+                                       Test traffic XGE:          -
+                                          Factory reset:          -
+
+Log System
+*********************************************************************
+>Date time: 19/03/2021 16:47:14 3398
+>Test traffic mode GE pon port 1-2-3-4 và uplink port 1-2-3-4:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+...Close file teleATT.exe: True
+...Change file TeleATT.cfg: False
+...Kết quả test traffic mode GE pon port 1-2-3-4 và uplink port 1-2-3-4: False
+...
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+> Total result: Failed
+> Total time: 00:00:20 Sec
+
+Log Telnet
+*********************************************************************
+

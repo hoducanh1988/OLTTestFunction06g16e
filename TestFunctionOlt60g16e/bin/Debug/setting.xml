@@ -1,0 +1,27 @@
+﻿<SettingModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <isConfigXGE>true</isConfigXGE>
+  <isRestoreXGE>true</isRestoreXGE>
+  <isTestTrafficXGE>true</isTestTrafficXGE>
+  <isFactoryReset>true</isFactoryReset>
+  <isTestTrafficPon5678Uplink1234>true</isTestTrafficPon5678Uplink1234>
+  <isTestTrafficPon9101112Uplink5678>true</isTestTrafficPon9101112Uplink5678>
+  <isTestTrafficPon13141516Uplink5678>true</isTestTrafficPon13141516Uplink5678>
+  <isTestTrafficPon1234Uplink1234>true</isTestTrafficPon1234Uplink1234>
+  <isUpgradeFirmware>true</isUpgradeFirmware>
+  <isConfigGE>true</isConfigGE>
+  <isRestoreGE>true</isRestoreGE>
+  <delayOpenTeleATT>3</delayOpenTeleATT>
+  <timeoutOltReboot>90</timeoutOltReboot>
+  <oltIP>192.168.100.2</oltIP>
+  <oltTelnetPort>23</oltTelnetPort>
+  <oltUser>admin</oltUser>
+  <oltPassword>admin</oltPassword>
+  <firmwareFile>C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\firmware\G16E_R5.3.25_V333.tar.gz</firmwareFile>
+  <firmwareVersion>R5.3.25V333</firmwareVersion>
+  <configGEFile>C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\ge\main.conf</configGEFile>
+  <configXGEFile>C:\Users\chien\source\repos\TestFunctionOlt60g16e\TestFunctionOlt60g16e\bin\Debug\OLT60_G16E\xe\main.conf</configXGEFile>
+  <teleATTFile>C:\Program Files (x86)\Xinertel\TeleATT2.7.7\TeleATT.exe</teleATTFile>
+  <scriptTestTrafficGE>C:\Users\chien\Desktop\test\TeleATTCfg</scriptTestTrafficGE>
+  <scriptTestTrafficXGE>C:\Users\chien\Desktop\test\TeleATTCfg</scriptTestTrafficXGE>
+  <timeoutTestTraffic>90</timeoutTestTraffic>
+</SettingModel>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AddrLearnPropertyList Default="自定义" SetCfgChineseName="自定义" SetCfgEnglishName="MyConfig">
+  <AddrLearnProperty Mode="system" ChineseName="配置(1M)" MaxLearnSeconds="5" AfterLearnWaitSeconds="500" BurstRate="1" RateUnit="0" BurstInterval="100" BurstCount="2" IsBroadCast="False" EnglishName="Config(1M)">
+  </AddrLearnProperty>
+  <AddrLearnProperty Mode="system" ChineseName="配置(10M)" MaxLearnSeconds="5" AfterLearnWaitSeconds="500" BurstRate="10" RateUnit="0" BurstInterval="100" BurstCount="2" IsBroadCast="False" EnglishName="Config(10M)">
+  </AddrLearnProperty>
+  <AddrLearnProperty Mode="system" ChineseName="配置(100M)" MaxLearnSeconds="5" AfterLearnWaitSeconds="500" BurstRate="100" RateUnit="0" BurstInterval="100" BurstCount="2" IsBroadCast="False" EnglishName="Config(100M)">
+  </AddrLearnProperty>
+</AddrLearnPropertyList>
+<!--
+
+
+
+
+
+-->
